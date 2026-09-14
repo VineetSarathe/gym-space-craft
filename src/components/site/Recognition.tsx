@@ -266,7 +266,7 @@ export function RecognitionSection({ items }: { items: RecognitionItem[] }) {
 
   return (
     <section className="bg-secondary" aria-labelledby="recognition-heading" onKeyDown={handleKeys}>
-      <div className="mx-auto max-w-[110rem] px-5 py-16 md:px-10 md:py-24">
+      <div className="mx-auto max-w-[110rem] px-5 pt-16 pb-0 md:px-10 md:pt-24">
         <Reveal className="grid items-end gap-8 lg:grid-cols-[minmax(0,1fr)_22rem]">
           <div>
             <p className="label-caps flex items-center gap-4 text-primary">
@@ -303,7 +303,7 @@ export function RecognitionSection({ items }: { items: RecognitionItem[] }) {
           ))}
         </div>
 
-        <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
+        <div className="mt-8 flex items-center justify-between pt-6 pb-2">
           <p className="label-caps hidden items-center gap-4 text-muted-foreground sm:flex">
             <span className="h-px w-12 bg-primary/45" />
             Spaces that move people
@@ -335,6 +335,7 @@ export function RecognitionSection({ items }: { items: RecognitionItem[] }) {
           </div>
         </div>
       </div>
+      <div aria-hidden className="seam-sand-to-ink" />
     </section>
   );
 }

@@ -32,12 +32,12 @@ export const storyArc = [
 ];
 
 export const methodSteps = [
-  { k: "Understand", d: "Your members, your model, your operating hours." },
-  { k: "Research", d: "Equipment specs, footfall data, comparable floors." },
-  { k: "Plan", d: "Zoning and circulation before aesthetics." },
-  { k: "Design", d: "Concept, lighting, 3D views, 2D working drawings." },
-  { k: "Build", d: "Drawing support through execution on site." },
-  { k: "Learn", d: "Post-opening review that feeds the next project." },
+  { k: "Understand", d: "Know your people, goals and opportunities." },
+  { k: "Research", d: "Study the context, user behaviour and spatial possibilities." },
+  { k: "Plan", d: "Develop a clear spatial and functional strategy." },
+  { k: "Design", d: "Bring the vision to life with intentional aesthetic design." },
+  { k: "Build", d: "Oversee the design intent through execution and attention to detail." },
+  { k: "Learn", d: "Measure. Refine. Evolve. With every project." },
 ];
 
 /** Empty this array and the Awards sub-section disappears — no padding. */

@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Specialised interior design for gyms and fitness spaces — built around function, performance and the people who use them.",
+          "We specialise in fitness and gym interior design, shaped around movement, performance and the people who use them.",
       },
     ],
   }),
@@ -92,12 +92,12 @@ const projects = [
 ];
 
 const steps = [
-  { k: "Understand", d: "Your members, your model, your operating hours." },
-  { k: "Research", d: "Equipment specs, footfall data, comparable floors." },
-  { k: "Plan", d: "Zoning and circulation before aesthetics." },
-  { k: "Design", d: "Concept, lighting, 3D views, 2D working drawings." },
-  { k: "Build", d: "Drawing support through execution on site." },
-  { k: "Learn", d: "Post-opening review that feeds the next project." },
+  { k: "Understand", d: "Know your people, goals and opportunities." },
+  { k: "Research", d: "Study the context, user behaviour and spatial possibilities." },
+  { k: "Plan", d: "Develop a clear spatial and functional strategy." },
+  { k: "Design", d: "Bring the vision to life with intentional aesthetic design." },
+  { k: "Build", d: "Oversee the design intent through execution and attention to detail." },
+  { k: "Learn", d: "Measure. Refine. Evolve. With every project." },
 ];
 
 const recognition = [
@@ -235,7 +235,7 @@ function Home() {
             }}
           >
             <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-background/75 md:text-lg">
-              Specialised interior design for gyms and fitness spaces — built around function,
+              We specialise in fitness and gym interior design, shaped around movement,
               performance and the people who use them.
             </p>
             <div className="mx-auto mt-10 grid max-w-2xl gap-3 sm:grid-cols-2">
@@ -307,11 +307,7 @@ function Home() {
 
           <ProjectShowcase projects={projects.slice(0, 3)} />
 
-          <Reveal className="mt-12 flex flex-wrap items-center justify-between gap-6 border-t border-border pt-6">
-            <p className="label-caps text-muted-foreground">
-              <span className="text-foreground">01</span> — 03 &nbsp;·&nbsp; Placeholder imagery and
-              project names
-            </p>
+          <Reveal className="mt-12 flex flex-wrap items-center justify-end gap-6 border-t border-border pt-6">
             <Link
               to="/work"
               className="label-caps group inline-flex items-center gap-3 transition-colors duration-300 hover:text-primary"
@@ -345,19 +341,19 @@ function Home() {
       <AboutSagrika
         portrait={founderImg}
         background={caseImg}
-        introduction="Sagrika Saraf leads Design Diaries. Trained as an interior designer, she treats a room as a place people inhabit, not simply as a piece of art. A single gym project became many — and each one added to a growing understanding of how equipment, movement and daily use shape a space long before aesthetics do."
-        story="She considered architecture, chose interior design, and started posting work on Instagram in 2018 as an early portfolio. Residential turned commercial. A referral brought the first gym project — and word of mouth turned that one project into a specialisation."
+        introduction="I’m Sagrika Saraf, an interior designer and founder of Design Diaries. My journey began with an interest in the human experience of spaces and evolved from designing interiors for residential and commercial spaces to a more refined interest in gym and fitness spaces."
+        story="My first gym project changed the course of my work. With the increase in projects came the growth in my understanding of movement, equipment, user behavior and what makes a fitness space really work. I now apply that experience to every gym interior design project that I do."
       />
 
       <div className="seam-to-cream" />
 
       {/* 07 — Case Study Spotlight */}
       <CaseStudySpotlight
-        meta="Indore, MP  |  6,200 sq ft  |  2024"
-        titleTop="Iron"
-        titleBottom="Standard"
-        kicker={"More than a gym,\na higher standard."}
-        summary="A performance-driven space designed for people who take their fitness — and their lifestyle — seriously."
+        meta="JAMMU, J&K | 3,500 SQ FT | 2024"
+        titleTop="A3 FITNESS"
+        titleBottom="GYM & SPA"
+        kicker="MAKING 3,500 SQ FT WORK HARDER."
+        summary="The room had to fit cardio, Zumba, dumbbells and strength training and still feel open and inviting."
         href="/work"
         images={[
           { src: heroImg, alt: "Film of the finished gym floor in use", video: heroVideo.url },
@@ -378,36 +374,35 @@ function Home() {
           {
             n: "01",
             t: "The Challenge",
-            d: "The brief was to reimagine an existing space into a high-performance gym with better flow and functionality.",
+            d: "The space needed to accommodate cardio, Zumba, dumbbells and strength training while still feeling open and inviting for a young, lifestyle-focused audience.",
           },
           {
             n: "02",
             t: "The Thinking",
-            d: "We analysed member flow, equipment relationships and zoned the space to suit different training styles.",
+            d: "We thought of ways that activities and equipment could complement each other, with related functions sharing space but with a clear and seamless flow.",
           },
           {
             n: "03",
-            t: "The Design",
-            d: "A clean, modern, functional design with natural light, warm materials and a motivating atmosphere.",
+            t: "The Decisions",
+            d: "We used ceiling and flooring treatments to define different areas, instead of adding partitions. We put cardio and Zumba together because the lighting and music would work well together.",
           },
           {
             n: "04",
             t: "The Outcome",
-            d: "A future-ready gym that drives higher engagement, better member experience and a stronger community.",
+            d: "The design was so popular that the client eventually moved to a larger space to cope with the overwhelming demand.",
           },
         ]}
       />
 
 
 
+      <div className="bg-foreground">
       {/* 08 — Recognition */}
       <Recognition items={recognition} />
 
-      <div className="seam-to-dark" />
-
       {/* 09 — What clients say */}
-      <section className="blend-ink text-background">
-        <div className="mx-auto max-w-[110rem] px-5 pb-16 md:px-10 md:pb-24">
+      <section className="relative z-[1] -mt-6 bg-foreground text-background">
+        <div className="mx-auto max-w-[110rem] px-5 pt-3 pb-16 md:px-10 md:pt-4 md:pb-24">
           <Reveal>
             <div className="label-caps flex flex-wrap items-center justify-between gap-4">
               <p className="flex items-center gap-4 text-primary">
@@ -560,8 +555,8 @@ function Home() {
                 <span className="text-primary">your gym</span>
               </h2>
               <p className="mt-7 max-w-md leading-relaxed text-background/65">
-                Tell us about the space, the equipment, and how people will train. A short form,
-                then a real conversation — Sagrika reviews every enquiry personally.
+                Tell us about your space, equipment, location and how people will use it. We’ll
+                transform your needs into a functional, well-designed gym space.
               </p>
             </Reveal>
 
@@ -572,6 +567,7 @@ function Home() {
         </div>
 
       </section>
+      </div>
     </>
   );
 }

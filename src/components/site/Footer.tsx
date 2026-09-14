@@ -41,7 +41,7 @@ export function Footer() {
             />
           </Link>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-background/65">
-            Specialist gym and fitness interior design. Indore, India — working across the country.
+            Gym interior design specialist, designing fitness spaces that work, designed around movement, performance and the people who use them.
           </p>
         </div>
 

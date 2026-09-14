@@ -21,8 +21,8 @@ const zones: Zone[] = [
   {
     n: "01",
     t: "Equipment Logic",
-    d: "Rack spacing, loading zones, mirror lines and safety envelopes set before any finish is chosen. Machines placed by use frequency, not by wall length.",
-    short: "The right equipment, right placement for real performance.",
+    d: "Every piece of equipment has a purpose and a place.",
+    short: "Every piece of equipment has a purpose and a place.",
     img: t1,
     icon: Dumbbell,
     box: { x: 3, y: 5, w: 40, h: 54 },
@@ -30,8 +30,8 @@ const zones: Zone[] = [
   {
     n: "02",
     t: "Circulation",
-    d: "Entry, warm-up, strength, conditioning and exit mapped as one route. The floor never bottlenecks at 7am — the hour your retention is decided.",
-    short: "Uninterrupted movement, intuitive flow across zones.",
+    d: "A good design lets people move through the space in a natural way.",
+    short: "A good design lets people move through the space in a natural way.",
     img: t2,
     icon: Wind,
     box: { x: 41, y: 3, w: 9, h: 92 },
@@ -39,8 +39,8 @@ const zones: Zone[] = [
   {
     n: "03",
     t: "Durability",
-    d: "Dropped plates, chalk, sweat and 14-hour days. Every material specified against five-year maintenance cost, not a mood board.",
-    short: "Materials that withstand intensity and time.",
+    d: "A gym should look good today and work hard every day.",
+    short: "A gym should look good today and work hard every day.",
     img: t3,
     icon: Shield,
     box: { x: 47, y: 7, w: 19, h: 58 },
@@ -48,8 +48,8 @@ const zones: Zone[] = [
   {
     n: "04",
     t: "Business Thinking",
-    d: "Trainer sightlines, PT floor allocation, locker throughput, retail at reception. The layout is a revenue instrument — designed that way.",
-    short: "Spaces designed to support growth and community.",
+    d: "Commercial gym interior design should support the business behind it and the people using the space.",
+    short: "Commercial gym interior design should support the business behind it and the people using the space.",
     img: t4,
     icon: Users,
     box: { x: 48, y: 66, w: 47, h: 30 },
@@ -86,8 +86,8 @@ export function WhyGymZones() {
               alone
             </h2>
             <p className="mt-7 max-w-md leading-relaxed text-background/65">
-              Every zone is intentionally planned to create a seamless fitness
-              experience — where form, function and flow come together.
+              Gym interior design is more than simply aesthetics. It’s about how a
+              space works, flows and feels to the people who use it.
             </p>
 
             <ul className="mt-10 flex-1 border-t border-background/15">
