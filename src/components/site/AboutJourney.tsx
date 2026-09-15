@@ -105,11 +105,20 @@ export function AboutJourney({ items }: { items: JourneyItem[] }) {
                     aria-pressed={isActive}
                   >
                     <span className="flex h-full w-full flex-col">
-                      <span className="flex w-full items-center justify-between">
-                        <span className="font-display text-xs text-primary">{String(index + 1).padStart(2, "0")}</span>
-                        <span className={cn("label-caps", isActive ? "text-background/50" : "text-muted-foreground")}>{item.year}</span>
-                      </span>
-                      <span className="mt-6 block text-sm font-semibold uppercase leading-tight">{item.title}</span>
+                      <div className="flex w-full items-start gap-3">
+                        <span className="shrink-0 font-display text-xs text-primary tabular-nums">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <span
+                          className={cn(
+                            "label-caps min-w-0 flex-1 leading-snug tracking-[0.12em] sm:tracking-[0.2em] [word-break:break-word]",
+                            isActive ? "text-background/50" : "text-muted-foreground",
+                          )}
+                        >
+                          {item.year}
+                        </span>
+                      </div>
+                      <span className="mt-5 block text-sm font-semibold uppercase leading-tight">{item.title}</span>
                       <span className={cn("mt-3 block text-sm font-normal leading-relaxed", isActive ? "text-background/65" : "text-muted-foreground")}>{item.text}</span>
                       <span className="mt-auto block pt-5">
                         <span className={cn("block h-0.5 origin-left bg-primary transition-transform duration-[4200ms] ease-linear", isActive ? "scale-x-100" : "scale-x-0")} />
