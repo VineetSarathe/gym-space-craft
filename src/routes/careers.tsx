@@ -30,11 +30,11 @@ function CareersPage() {
       <section className="mx-auto max-w-[110rem] px-5 pt-28 pb-16 md:px-10 md:pt-36 md:pb-20">
         <Reveal>
           <p className="label-caps text-primary">Careers</p>
-          <h1 className="display-lg mt-5 max-w-4xl">Design floors not moodboards</h1>
+          <h1 className="display-lg mt-5 max-w-4xl">GROW THROUGH REAL WORK</h1>
           <p className="mt-8 max-w-2xl text-lg text-muted-foreground">
-            A small studio working almost entirely on gyms and fitness spaces. You'll spend your
-            time on rack spacing, circulation, drainage falls and how a floor holds up in year
-            three — and you'll be on site while it's being built, not only behind a screen.
+            Join a studio where design is more than just esthetics. Work on real wellness and gym
+            interior design projects and get experience of helping to create spaces that work for the
+            people who use them.
           </p>
         </Reveal>
       </section>
@@ -57,8 +57,8 @@ function CareersPage() {
               </ul>
             ) : (
               <p className="mt-6 max-w-md text-muted-foreground">
-                Nothing formally open right now — but we're always open to hearing from strong
-                interior designers and project managers, especially anyone who has worked on
+                Currently there are no formal openings. We are always open to meeting designers,
+                architects and project managers who are curious, detail-oriented and interested in
                 commercial or fitness spaces.
               </p>
             )}

@@ -30,7 +30,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Design Diaries" },
       {
         property: "og:description",
-        content: "Function first aesthetics with purpose — the studio and the founder behind it.",
+        content: "FUNCTION FIRST. AESTHETICS WITH PURPOSE. — the studio and the founder behind it.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -60,8 +60,11 @@ function AboutPage() {
         <div className="relative mx-auto grid min-h-[calc(82svh-6rem)] max-w-[110rem] items-end gap-10 px-5 py-12 md:px-10 md:py-16 lg:grid-cols-[0.92fr_0.72fr_0.55fr]">
           <Reveal className="self-center lg:pb-10">
             <p className="label-caps text-primary">Design Diaries by Sagrika</p>
-            <h1 className="display-statement mt-6 max-w-3xl">Spaces that perform when the floor is full</h1>
-            <p className="mt-7 max-w-lg text-base leading-relaxed text-background/70 md:text-lg">A specialist gym and fitness interior studio founded in Indore with a practice built around movement equipment and the business behind every floor</p>
+            <h1 className="display-statement mt-6 max-w-3xl">More Than Interiors</h1>
+            <p className="mt-7 max-w-lg text-base leading-relaxed text-background/70 md:text-lg">
+              I think good design has to be more than just good-looking. It has to know the people,
+              purpose and possibilities of each space.
+            </p>
             <Link to="/start-a-project" className="label-caps group mt-8 inline-flex items-center gap-3 bg-primary px-6 py-4 text-primary-foreground transition-colors hover:bg-background hover:text-foreground">
               Start a project <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
@@ -77,7 +80,9 @@ function AboutPage() {
           </Reveal>
 
           <Reveal delay={240} className="hidden self-center border-l border-background/20 pl-6 lg:block">
-            <p className="font-serif text-2xl leading-snug">Spaces should be designed for how people move through them not only how they look</p>
+            <p className="font-serif text-2xl leading-snug">
+              Spaces need to do more for the people who use them
+            </p>
             <p className="label-caps mt-6 text-primary">The studio belief</p>
             <div className="mt-10 grid grid-cols-2 gap-px bg-background/15">
               <div className="bg-foreground/80 p-4"><p className="font-display text-2xl text-primary">15+</p><p className="label-caps mt-2 text-background/45">Gym projects</p></div>
@@ -95,8 +100,14 @@ function AboutPage() {
             <Reveal className="relative z-10 lg:pr-8">
               <p className="label-caps text-primary">Meet the founder</p>
               <h2 className="display-statement mt-5">A specialist by <span className="accent-italic">practice</span></h2>
-              <p className="mt-7 max-w-xl text-lg leading-relaxed text-background/75">Sagrika began with interiors and found her specialisation through the harder questions gym owners were asking One trusted referral became another until fitness floors became the studio's central practice</p>
-              <blockquote className="mt-10 border-l-2 border-primary pl-6 font-serif text-2xl leading-snug text-background/90">The best looking gym still fails if its busiest hour does not work</blockquote>
+              <p className="mt-7 max-w-xl text-lg leading-relaxed text-background/75">
+                My expertise as a gym interior designer came from years of designing, observing and learning from
+                real spaces. Every project has taught me to look beyond aesthetics to understand movement,
+                equipment, people and how a gym has to work everyday.
+              </p>
+              <blockquote className="mt-10 border-l-2 border-primary pl-6 font-serif text-2xl leading-snug text-background/90">
+                The best-looking gym still fails if its busiest hour doesn’t work.
+              </blockquote>
               <Link to="/work" className="label-caps group mt-9 inline-flex items-center gap-3 text-primary">See the work <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></Link>
             </Reveal>
             <div className="grid grid-cols-[0.8fr_1.2fr] items-end gap-3 md:gap-5">
@@ -119,10 +130,28 @@ function AboutPage() {
         <div className="mx-auto max-w-[110rem] px-5 py-18 md:px-10 md:py-28">
           <Reveal className="mb-10 flex flex-wrap items-end justify-between gap-6">
             <h2 className="display-statement">Studio <span className="accent-italic">philosophy</span></h2>
-            <p className="max-w-sm text-background/60">Function first aesthetics with purpose</p>
+            <p className="max-w-sm text-background/60">FUNCTION FIRST. AESTHETICS WITH PURPOSE.</p>
           </Reveal>
           <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr_1fr]">
-            {[{ image: materials, title: "Built for repetition", text: "Materials are judged against dropped plates chalk and years of cleaning cycles" }, { image: gymLayout, title: "Drawn for movement", text: "Circulation is resolved before the room is styled" }, { image: p6, title: "Designed for business", text: "Member flow staffing and revenue shape every plan" }].map((item, index) => (
+            {[
+              {
+                image: materials,
+                title: "BUILT FOR REAL USE",
+                text:
+                  "The materials are chosen to withstand daily training, regular maintenance and years of use.",
+              },
+              {
+                image: gymLayout,
+                title: "DRAWN FOR MOVEMENT",
+                text:
+                  "Every layout begins with the movement, training and interaction of people with the space.",
+              },
+              {
+                image: p6,
+                title: "DESIGNED FOR BUSINESS",
+                text: "We consider the design, member flow, operations and revenue together.",
+              },
+            ].map((item, index) => (
               <Reveal key={item.title} delay={index * 90} className="group relative min-h-[25rem] overflow-hidden border border-background/15 lg:even:translate-y-10">
                 <img src={item.image} alt={item.title} loading="lazy" width={1200} height={900} className="absolute inset-0 h-full w-full object-cover opacity-65 transition-all duration-[1000ms] group-hover:scale-[1.05] group-hover:opacity-40" />
                 <span className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/15 to-transparent" />
@@ -184,7 +213,10 @@ function AboutPage() {
           <Reveal>
             <p className="label-caps text-primary">Start a project</p>
             <h2 className="display-statement mt-5 max-w-3xl">Bring Sagrika into the room <span className="accent-italic">early</span></h2>
-            <p className="mt-6 max-w-xl text-background/70">Send the floor area the city and what you plan to run in it Sagrika reads every enquiry</p>
+            <p className="mt-6 max-w-xl text-background/70">
+              Tell us your floor area, location and what you want to build. The sooner I understand the
+              space, the better I can mould its gym interior design.
+            </p>
           </Reveal>
           <Reveal delay={120}>
             <Link to="/start-a-project" className="label-caps group inline-flex items-center gap-4 bg-primary px-7 py-5 text-primary-foreground transition-colors hover:bg-background hover:text-foreground">Tell us about the space <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></Link>

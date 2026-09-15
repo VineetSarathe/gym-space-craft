@@ -34,9 +34,10 @@ function ContactPage() {
       <section className="mx-auto max-w-[110rem] px-5 pt-28 pb-16 md:px-10 md:pt-36 md:pb-20">
         <Reveal>
           <p className="label-caps text-primary">Contact Us</p>
-          <h1 className="display-lg mt-5 max-w-3xl">Say hello</h1>
+          <h1 className="display-lg mt-5 max-w-3xl">LET&apos;S START A CONVERSATION</h1>
           <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-            General questions, press, suppliers and collaborations — this is the right door.
+            For general enquiries, collaborations, press or anything else you would like to discuss,
+            reach out to the studio.
           </p>
         </Reveal>
       </section>
@@ -67,17 +68,18 @@ function ContactPage() {
       <section className="bg-secondary">
         <div className="mx-auto max-w-[110rem] px-5 py-20 md:px-10 md:py-28">
           <Reveal className="max-w-3xl">
-            <p className="label-caps text-primary">Planning a space?</p>
-            <h2 className="display-lg mt-5">Then don't use this page</h2>
+            <p className="label-caps text-primary">START A PROJECT</p>
+            <h2 className="display-lg mt-5">HAVE A SPACE IN MIND?</h2>
             <p className="mt-6 text-muted-foreground">
-              If you have a gym or studio in mind, Start a Project gets you a useful reply — layout,
-              feasibility and timeline — instead of a generic acknowledgement.
+              Planning a gym or fitness or wellness space? Share your project with us and let&apos;s see
+              how thoughtful gym interior design can bring your vision, function and user experience
+              together.
             </p>
             <Link
               to="/start-a-project"
               className="label-caps mt-8 inline-block bg-primary px-7 py-4 text-primary-foreground transition-all duration-300 hover:bg-foreground active:scale-[0.98]"
             >
-              Discuss your gym project
+              LET&apos;S TALK ABOUT YOUR PROJECT →
             </Link>
           </Reveal>
           <p className="mt-10 text-xs text-muted-foreground">

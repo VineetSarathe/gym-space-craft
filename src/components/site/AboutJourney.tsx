@@ -44,7 +44,7 @@ export function AboutJourney({ items }: { items: JourneyItem[] }) {
             </h2>
           </div>
           <p className="max-w-2xl text-muted-foreground lg:justify-self-end">
-            From a first public portfolio to a specialist practice shaped by the questions gym owners actually ask
+            What began with curiosity became a specialist practice shaped by how people move, experience and use space.
           </p>
         </Reveal>
 

@@ -6,28 +6,28 @@
 export const storyArc = [
   {
     year: "Class 12",
-    title: "Architecture considered, interiors chosen",
-    text: "Sagrika weighed architecture seriously, then chose interior design — the scale where a decision is felt daily by the people inside the room.",
+    title: "Finding my way to interior design",
+    text: "I shifted my subjects with the idea of architecture but then discovered that interior design was what I was really interested in.",
   },
   {
     year: "2018",
-    title: "Instagram as the first portfolio",
-    text: "No studio, no website. Work was posted as it was drawn, and the first clients arrived through the grid rather than a pitch.",
+    title: "Instagram as the First Portfolio",
+    text: "I didn’t have a portfolio so I began making and sharing imaginary projects on Instagram. That small experiment marked the beginning of my first residential projects.",
   },
   {
-    year: "2019–2021",
-    title: "Residential into commercial",
-    text: "Homes taught detail and patience. Commercial work introduced the harder question — how does this space perform on its busiest day?",
+    year: "From residential to commercial",
+    title: "Learning how spaces work",
+    text: "I got into commercial interiors and that changed the way I looked at design. I became more interested in how spaces worked for the people who used them.",
   },
   {
-    year: "2021",
-    title: "The first gym, through a personal connection",
-    text: "A referral from someone who trusted her with a floor she had never designed before. Equipment logic, circulation and durability had to be learned from the ground up.",
+    year: "First gym project",
+    title: "Changing the course of my work",
+    text: "My first gym project changed the course of my work. I started to pay attention to movement, equipment, circulation and the experience of the people using the space.",
   },
   {
-    year: "Since",
-    title: "Word of mouth turned it into a specialisation",
-    text: "One gym owner told another. Fifteen-plus fitness floors later, gym interiors are not a category the studio takes on — they are what the studio does.",
+    year: "Today",
+    title: "Specialising in gym interior design",
+    text: "More gym projects followed through word of mouth. Each project deepened my understanding, eventually turning gym interior design into my specialisation.",
   },
 ];
 
