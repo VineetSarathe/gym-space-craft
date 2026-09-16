@@ -15,6 +15,8 @@ export type ProjectCardData = {
   insight: string;
   images: string[];
   clientType?: string;
+  cardLabel?: string;
+  hideCardMeta?: boolean;
 };
 
 function imagesFromProject(project: Project) {
@@ -39,6 +41,8 @@ export function toProjectCardData(project: Project): ProjectCardData {
     insight: project.insight,
     images: imagesFromProject(project),
     clientType: project.clientType,
+    cardLabel: project.cardLabel,
+    hideCardMeta: project.hideCardMeta,
   };
 }
 
@@ -164,14 +168,15 @@ export function ProjectCard({
       <div className="flex flex-1 flex-col px-5 pt-5 pb-4 transition-colors duration-500">
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
           <div className="min-w-0">
-            <p className="label-caps text-primary">{card.category}</p>
+            <p className="label-caps text-primary">{card.cardLabel ?? card.category}</p>
             <h3 className="display-md mt-2 text-foreground transition-colors duration-500 group-hover:text-background group-focus-within:text-background">
               {card.name}
             </h3>
           </div>
           {card.clientType && (
-            <p className="label-caps hidden max-w-28 text-right leading-relaxed text-muted-foreground transition-colors duration-500 group-hover:text-background/60 xl:block">
-              {card.clientType}
+            <p className="label-caps hidden max-w-32 text-right leading-relaxed text-muted-foreground transition-colors duration-500 group-hover:text-background/60 xl:block">
+              <span className="block text-[0.62rem] tracking-[0.18em] opacity-70">CLIENT TYPE</span>
+              <span className="mt-1 block">{card.clientType}</span>
             </p>
           )}
         </div>
@@ -180,12 +185,16 @@ export function ProjectCard({
           {card.insight}
         </p>
 
-        <div className="label-caps mt-5 grid grid-cols-[minmax(0,1fr)_auto] gap-4 border-t border-border pt-4 text-muted-foreground transition-colors duration-500 group-hover:border-background/25 group-hover:text-background/70 group-focus-within:border-background/25 group-focus-within:text-background/70">
-          <span className="min-w-0">{card.location}</span>
-          <span className="shrink-0 text-right">
-            {card.area} · {card.year}
-          </span>
-        </div>
+        {(card.location || (!card.hideCardMeta && (card.area || card.year))) && (
+          <div className="label-caps mt-5 grid grid-cols-[minmax(0,1fr)_auto] gap-4 border-t border-border pt-4 text-muted-foreground transition-colors duration-500 group-hover:border-background/25 group-hover:text-background/70 group-focus-within:border-background/25 group-focus-within:text-background/70">
+            <span className="min-w-0">{card.location}</span>
+            {!card.hideCardMeta && (card.area || card.year) && (
+              <span className="shrink-0 text-right">
+                {[card.area, card.year].filter(Boolean).join(" · ")}
+              </span>
+            )}
+          </div>
+        )}
 
 
         {images.length > 1 && (

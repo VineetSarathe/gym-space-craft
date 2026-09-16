@@ -72,7 +72,7 @@ function ProjectDetail() {
           { k: "Area", v: project.area },
           { k: "Year", v: project.year },
           { k: "Location", v: project.location },
-        ]}
+        ].filter((item) => item.v)}
       >
         <div className="mt-8 flex flex-wrap items-center gap-6">
           <DiscussCta invert />

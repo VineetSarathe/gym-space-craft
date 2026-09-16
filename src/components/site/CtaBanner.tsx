@@ -3,8 +3,8 @@ import { Reveal } from "./Reveal";
 
 export function CtaBanner({
   label = "Start a Project",
-  title = "Tell us about the space.",
-  body = "Send the floor area, the city and what you plan to run in it. You'll get a considered reply, not a brochure.",
+  title = "SEE THE SPACE BEFORE IT IS BUILT",
+  body = "Thinking gym, fitness studio, or wellness project? Let’s talk about your space, your needs, and what you want to build.",
   cta = "Start a Project",
   image,
   imageAlt = "Purpose-designed strength and conditioning gym interior",

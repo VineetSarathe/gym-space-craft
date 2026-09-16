@@ -2,39 +2,35 @@ import { ClipboardList, LayoutGrid, Lightbulb, Ruler, Boxes } from "lucide-react
 
 export const problems = [
   {
-    title: "A layout drawn around equipment, not movement",
-    text: "The equipment list arrives first and the floor is arranged to fit it. Peak hour then runs as a queue at three stations while a whole corner goes unused.",
+    title: "EQUIPMENT BEFORE MOVEMENT",
+    text: "When equipment dictates the layout, movement becomes an afterthought. Poor gym space planning can create bottlenecks, wasted space and a gym that becomes difficult to navigate.",
   },
   {
-    title: "A lease signed before anyone tested the shell",
-    text: "Column grid and slab height decide capacity. Owners discover the unit holds fourteen racks, not twenty, after the rent is committed.",
+    title: "LEASE BEFORE TESTING THE SPACE",
+    text: "A space might look right on paper and still fail as a gym. Testing the floor area early can reveal circulation, zoning, and equipment-planning problems before they become expensive changes.",
   },
   {
-    title: "A generalist designer learning gyms on your budget",
-    text: "Residential instincts produce beautiful photographs and floors that fail under dropped plates, chalk and a 7am rush.",
+    title: "A GENERALIST LEARNING ON YOUR BUDGET",
+    text: "Gym Interiors have their own functional requirements. Critical design choices can become costly lessons to the owner without experience in equipment layouts, training zones and user flow.",
   },
   {
-    title: "Drawings a contractor cannot build from",
-    text: "Renders without dimensioned working drawings send the contractor guessing on site, and every guess becomes a variation you pay for.",
+    title: "DRAWINGS THAT CANNOT BE BUILT",
+    text: "A good design needs clear buildable drawings. Missing documentation results in confusion on site, expensive changes and a final space that is a departure from the design intent.",
   },
 ];
 
 export const method = [
   {
-    title: "Function is decided before finish",
-    text: "Circulation, zoning and equipment placement are fixed before a single material is selected. The spine is drawn before the racks.",
+    title: "FUNCTION COMES BEFORE FINISH",
+    text: "The circulation, zoning and placement of equipment are planned before a single material is chosen. The space is designed around how people move, train and use it.",
   },
   {
-    title: "Planned against how the business runs",
-    text: "Class timetable, trainer roster, staffed and unstaffed hours, retail path. The floor is designed against the operating day, not a mood board.",
+    title: "DESIGNED AROUND HOW THE BUSINESS RUNS",
+    text: "The layout is shaped by class timetables, trainer schedules, staffed and unstaffed hours and retail paths. The floor is designed around the operating day, not just how it looks on a mood board.",
   },
   {
-    title: "15+ gyms of accumulated numbers",
-    text: "Rack centres, aisle widths, wet-zone drainage, night lighting levels — carried forward from floors we have watched run for years.",
-  },
-  {
-    title: "Drawings your contractor can build from",
-    text: "Dimensioned 2D working drawings, coordinated with services, plus drawing support through the build.",
+    title: "DRAWINGS YOUR CONTRACTOR CAN BUILD FROM",
+    text: "Detailed 2D working drawings coordinated with services provide the contractor clarity on site and help to carry the design intent through the build.",
   },
 ];
 
@@ -42,37 +38,52 @@ export const deliverables = [
   {
     n: "01",
     icon: ClipboardList,
-    title: "Concept Presentation",
-    text: "The design direction, zoning logic and material intent, presented as one clear argument for how the space should work — not a selection of options to pick from.",
-    includes: ["Zoning rationale", "Material direction", "Reference imagery", "Capacity view"],
+    title: "CONCEPT PRESENTATION",
+    text: "The design direction, zoning logic and material intent, presented as one clear plan for how the space should work.",
+    includes: ["Zoning rationale", "Reference imagery", "Material direction", "Capacity view"],
   },
   {
     n: "02",
     icon: LayoutGrid,
-    title: "Space Planning & Layout",
-    text: "The core of the work. Circulation spine, equipment placement, zone boundaries, front-of-house and changing-room flows, tested against your peak hour.",
-    includes: ["Circulation study", "Equipment placement", "Zone boundaries", "Peak-hour test"],
+    title: "SPACE PLANNING & LAYOUT",
+    text: "The core of the work. Equipment placement, circulation, training zones and changing-room flows are planned around how the gym will actually operate, including during peak hours.",
+    includes: ["Circulation study", "Equipment placement", "Zone boundaries", "Peak-hour testing"],
   },
   {
     n: "03",
     icon: Lightbulb,
-    title: "Lighting Design",
-    text: "Levels planned per zone — strength, conditioning, studio, circulation, front-of-house — with mirror positions checked against glare before anything is fixed.",
-    includes: ["Zone-wise levels", "Fitting layout", "Glare and mirror check", "Night-hours scheme"],
+    title: "LIGHTING DESIGNED FOR HOW THE SPACE WORKS",
+    text: "We design lighting for different zones and activities to achieve the right balance of function, visibility, and atmosphere.",
+    includes: [
+      "Zone-wise lighting levels",
+      "Fixture layout",
+      "Glare and mirror check",
+      "Night-hours scheme",
+    ],
   },
   {
     n: "04",
     icon: Ruler,
-    title: "2D Working Drawings",
-    text: "Dimensioned drawings for execution: floor plans, setting-out, ceiling and electrical layouts, joinery and finish schedules your contractor builds from.",
-    includes: ["Setting-out plans", "Ceiling & electrical", "Joinery details", "Finish schedule"],
+    title: "2D WORKING DRAWINGS",
+    text: "Detailed drawings translate the design into clear instructions so your contractor knows exactly how to build your space.",
+    includes: [
+      "Setting-out plans",
+      "Joinery details",
+      "Ceiling & electrical layouts",
+      "Finish schedules",
+    ],
   },
   {
     n: "05",
     icon: Boxes,
-    title: "3D Views of the Space",
-    text: "Views of the agreed layout so you and your team can see the floor before it is built — used to confirm decisions, not to sell a look.",
-    includes: ["Key zone views", "Front-of-house view", "Material verification", "Sign-off set"],
+    title: "SEE THE SPACE BEFORE IT IS BUILT",
+    text: "Detailed drawings translate the design into clear instructions so your contractor knows exactly how to build your space.",
+    includes: [
+      "Key zone views",
+      "Material verification",
+      "Front-of-house views",
+      "Design sign-off",
+    ],
   },
 ];
 

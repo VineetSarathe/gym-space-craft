@@ -26,7 +26,7 @@ export function ProjectsStrip({
         <p className="label-caps text-primary">{label}</p>
         <h2 className="display-statement mt-5">{title}</h2>
         <Link to="/work" className="label-caps link-underline mt-7 hover:text-primary">
-          See more work
+          View all interior projects
         </Link>
       </Reveal>
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -48,7 +48,7 @@ const defaultReels = [
 ];
 
 export function ReelsSection({
-  label = "On Instagram",
+  label = "EXPLORE OUR INSTAGRAM",
   title = "Floors in motion.",
 }: {
   label?: string;

@@ -54,11 +54,10 @@ function ServicesPage() {
         label="Services — Design consultancy"
         title={
           <>
-            Design consultancy for floors that have to{" "}
-            <span className="accent-italic">perform</span>
+            Design consultancy for gym and fitness spaces.
           </>
         }
-        intro="One clear offering, not a menu of tiers — the design and drawings that decide whether your floor works, handed to your contractor to build."
+        intro="Full service fitness and gym design, including space planning, equipment layout, design development, and technical drawings. All designed around how your space needs to perform."
         primary={servicesHero}
         primaryAlt="Gym interior with micro-cement wall, oak slats and terracotta accent lighting"
         secondary={floorplan}
@@ -77,8 +76,8 @@ function ServicesPage() {
         <Chapter
           n="01"
           label="Before you call us"
-          title={<>What usually goes wrong first</>}
-          intro="Nearly every gym owner who reaches us is carrying at least two of these. All four are cheaper to solve at drawing stage than at handover."
+          title={<>WHERE GYM DESIGN OFTEN GOES WRONG</>}
+          intro="Most gym projects have at least 2 of these problems. Each is cheaper and easier to fix at the design stage than at handover."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {problems.map((p, i) => (
@@ -97,7 +96,7 @@ function ServicesPage() {
 
       {/* Method — offset sequence */}
       <DarkBand>
-        <Chapter n="02" label="The method" title={<>How Sagrika works against them</>} />
+        <Chapter n="02" label="The method" title={<>HOW SAGRIKA DESIGNS AROUND THEM</>} />
         <div className="mt-12 space-y-16 md:space-y-24">
           {method.map((m, i) => (
             <Reveal
@@ -141,7 +140,7 @@ function ServicesPage() {
 
       <DeliverablesShowcase />
 
-      <ProjectsStrip label="Consultancy in practice" title="Floors drawn this way" limit={3} />
+      <ProjectsStrip label="Consultancy in practice" title="DESIGN THAT WORKS IN REAL SPACES" limit={3} />
 
       <Testimonial
         quote="We handed the drawings to our contractor and he had almost nothing to ask. That alone saved us weeks."

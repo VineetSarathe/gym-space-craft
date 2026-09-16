@@ -24,6 +24,8 @@ export type Project = {
   area: string;
   year: string;
   clientType: string;
+  cardLabel?: string;
+  hideCardMeta?: boolean;
   insight: string;
   card: string;
   hero: string;
@@ -36,13 +38,16 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "iron-standard",
-    name: "Iron Standard",
-    location: "Indore, MP",
+    name: "THE STRENGTH CULTURE",
+    location: "Jammu (J&K), India",
     category: "Gym Projects",
+    cardLabel: "GYM INTERIOR DESIGN PROJECTS",
+    hideCardMeta: true,
     area: "6,200 sq ft",
     year: "2024",
-    clientType: "Independent strength gym",
-    insight: "Zoned circulation cut equipment wait-time in half at peak hours.",
+    clientType: "STRENGTH TRAINING GYM",
+    insight:
+      "All-black strength gym to maintain the focus on training with clear circulation and movement planned around the workout.",
     card: p1,
     hero: heroGym,
     gallery: [
@@ -77,13 +82,16 @@ export const projects: Project[] = [
   },
   {
     slug: "sanctum-wellness",
-    name: "Sanctum Wellness",
-    location: "Pune, MH",
-    category: "Wellness Studios",
-    area: "2,400 sq ft",
+    name: "A3 FITNESS GYM & SPA",
+    location: "JAMMU, INDIA · 3,500 SQ FT",
+    category: "Gym Projects",
+    cardLabel: "GYM INTERIOR DESIGN PROJECTS",
+    hideCardMeta: true,
+    area: "3,500 sq ft",
     year: "2024",
-    clientType: "Boutique wellness studio",
-    insight: "Acoustic separation let yoga and HIIT run in the same shell.",
+    clientType: "LIFESTYLE-FOCUSED FITNESS SPACE",
+    insight:
+      "A 3,500 sq ft fitness space planned around cardio, Zumba, dumbbells and strength training, using ceilings and flooring to define each zone.",
     card: p2,
     hero: p2,
     gallery: [
@@ -117,13 +125,16 @@ export const projects: Project[] = [
   },
   {
     slug: "forge-24",
-    name: "Forge 24",
-    location: "Bhopal, MP",
+    name: "A3 FITNESS GYM 2",
+    location: "",
     category: "Gym Projects",
+    cardLabel: "GYM INTERIOR DESIGN PROJECTS",
+    hideCardMeta: true,
     area: "4,800 sq ft",
     year: "2023",
-    clientType: "24-hour access gym",
-    insight: "Turf lane placed off the main aisle removed the daily collision point.",
+    clientType: "EXPANDED FITNESS GYM",
+    insight:
+      "A larger second space that repurposed existing materials, transforming a garage-like shell into a more upmarket gym setting.",
     card: p3,
     hero: p3,
     gallery: [
@@ -151,13 +162,16 @@ export const projects: Project[] = [
   },
   {
     slug: "rep-house-cycle",
-    name: "Rep House Cycle",
-    location: "Indore, MP",
-    category: "Wellness Studios",
+    name: "THE BODY MOVE FITNESS",
+    location: "New Delhi, India",
+    category: "Gym Projects",
+    cardLabel: "GYM INTERIOR DESIGN PROJECTS",
+    hideCardMeta: true,
     area: "1,600 sq ft",
     year: "2023",
-    clientType: "Indoor cycling studio",
-    insight: "Tiered deck added nine bikes without touching the footprint.",
+    clientType: "CLUB-BASED FITNESS SPACE",
+    insight:
+      "A nature-inspired fitness space with wood, stone, limewash textures and natural light to create an experience beyond the typical dark gym.",
     card: p4,
     hero: p4,
     gallery: [
@@ -188,13 +202,16 @@ export const projects: Project[] = [
   },
   {
     slug: "north-block-strength",
-    name: "North Block Strength",
-    location: "Ujjain, MP",
+    name: "FIT FIRST GYM",
+    location: "RAJKOT, INDIA",
     category: "Gym Projects",
+    cardLabel: "GYM INTERIOR DESIGN PROJECTS",
+    hideCardMeta: true,
     area: "3,900 sq ft",
     year: "2023",
-    clientType: "Neighbourhood strength gym",
-    insight: "Reception moved off the entry axis and doubled retail pick-up.",
+    clientType: "FITNESS ARENA",
+    insight:
+      "A massive fitness arena imagined from far-off Delhi, with meticulous planning and detailed drawings linking design to execution in Rajkot.",
     card: p6,
     hero: p6,
     gallery: [{ src: gallery1, alt: "Placeholder: interior detail at North Block Strength" }],
@@ -215,13 +232,16 @@ export const projects: Project[] = [
   },
   {
     slug: "still-house-recovery",
-    name: "Still House Recovery",
-    location: "Indore, MP",
-    category: "Wellness Studios",
+    name: "DAWN'S GYM",
+    location: "AMRITSAR, INDIA",
+    category: "Gym Projects",
+    cardLabel: "GYM INTERIOR DESIGN PROJECTS",
+    hideCardMeta: true,
     area: "1,900 sq ft",
     year: "2022",
-    clientType: "Recovery and mobility studio",
-    insight: "Wet and dry zones split at the door, cutting daily turnaround time.",
+    clientType: "LUXURY MULTI-FLOOR GYM",
+    insight:
+      "A multi-level gym that combines strength training, crossfit, women's training and hospitality spaces, all in one coherent design language.",
     card: p5,
     hero: p5,
     gallery: [{ src: p2, alt: "Placeholder: recovery room at Still House" }],
@@ -238,6 +258,72 @@ export const projects: Project[] = [
       quote: "Our cleaning routine went from an hour to twenty minutes.",
       author: "Placeholder Client",
       role: "Founder, Still House Recovery",
+    },
+  },
+  {
+    slug: "fitness-manzil-gym",
+    name: "FITNESS MANZIL GYM",
+    location: "South Delhi, India",
+    category: "Gym Projects",
+    cardLabel: "GYM INTERIOR DESIGN PROJECTS",
+    hideCardMeta: true,
+    area: "",
+    year: "",
+    clientType: "PREMIUM FITNESS GYM",
+    insight:
+      "Smart zoning of a basement gym with little natural light to bring daylight into the cardio and studio areas.",
+    card: caseImg,
+    hero: caseImg,
+    gallery: [
+      { src: p1, alt: "Fitness Manzil Gym basement training floor" },
+      { src: gallery1, alt: "Fitness Manzil Gym cardio and studio daylight zoning" },
+    ],
+    study: {
+      brief: "A basement gym in South Delhi with almost no natural light, needing cardio and studio zones that still felt open.",
+      user: "Members training across cardio, group studio and strength in a below-ground shell.",
+      challenge: "Little daylight and a basement plan that made cardio and studio spaces feel closed in.",
+      decisions:
+        "Zoning, ceiling treatment and light paths were used to pull daylight into the cardio and studio areas without adding partitions.",
+      outcome: "The basement reads as a premium gym, with cardio and studio zones that feel brighter and easier to use.",
+      learning: "In a dark shell, zoning and light matter more than decoration.",
+    },
+    testimonial: {
+      quote: "The basement no longer feels like a basement.",
+      author: "Placeholder Client",
+      role: "Owner, Fitness Manzil Gym",
+    },
+  },
+  {
+    slug: "outwork-fitness-gym",
+    name: "OUTWORK FITNESS GYM",
+    location: "South Delhi, India",
+    category: "Gym Projects",
+    cardLabel: "GYM INTERIOR DESIGN PROJECTS",
+    hideCardMeta: true,
+    area: "",
+    year: "",
+    clientType: "TWO-FLOOR FITNESS GYM",
+    insight:
+      "A two-floor fitness zone for different training groups, with a layout rethought around unexpected structural constraints.",
+    card: p4,
+    hero: p4,
+    gallery: [
+      { src: p6, alt: "Outwork Fitness Gym two-floor training layout" },
+      { src: p3, alt: "Outwork Fitness Gym circulation around structural constraints" },
+    ],
+    study: {
+      brief: "A two-floor gym in South Delhi for different training groups, with structure that did not match the first plan.",
+      user: "Separate training groups needing clear floors without mixing circulation.",
+      challenge: "Unexpected structural constraints forced the original layout to be rethought.",
+      decisions:
+        "The plan was redrawn around the existing structure so each floor could serve a different training group without fighting the shell.",
+      outcome: "Two floors work as one gym, with a layout that fits the structure rather than ignoring it.",
+      learning: "Structure is part of the brief. The layout has to start from what is already there.",
+    },
+    testimonial: {
+      quote: "The constraints became the plan.",
+      author: "Placeholder Client",
+      role: "Owner, Outwork Fitness Gym",
     },
   },
 ];

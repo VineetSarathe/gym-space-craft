@@ -177,7 +177,7 @@ function WorkListing() {
         <div className="mx-auto max-w-[110rem] px-5 py-20 md:px-10 md:py-28">
           <Reveal className="flex flex-wrap items-end justify-between gap-6">
             <div>
-              <p className="label-caps text-primary">On Instagram</p>
+              <p className="label-caps text-primary">EXPLORE OUR INSTAGRAM</p>
               <h2 className="display-lg mt-5">Floors in motion</h2>
             </div>
             <a

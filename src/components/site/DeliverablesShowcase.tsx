@@ -39,7 +39,7 @@ export function DeliverablesShowcase() {
             <h2 className="display-lg mt-5">What you receive</h2>
           </div>
           <p className="max-w-xl text-muted-foreground lg:justify-self-end">
-            One coordinated package from the first spatial decision to the drawings your contractor builds from
+            Our design package is an organized plan that moves your gym from spatial planning to detailed working drawings.
           </p>
         </Reveal>
 

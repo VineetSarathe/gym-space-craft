@@ -180,7 +180,7 @@ function ResourcesListing() {
 
       <CtaBanner />
 
-      <ReelsSection label="On Instagram" title="Shorter faster answers" />
+      <ReelsSection label="EXPLORE OUR INSTAGRAM" title="Shorter faster answers" />
 
       <FaqSection items={resourceFaqs} title="About these resources" />
     </>
