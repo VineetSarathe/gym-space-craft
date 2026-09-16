@@ -68,7 +68,7 @@ function ProjectDetail() {
         image={project.hero}
         imageAlt={`${project.name}, ${project.location} — main training floor`}
         meta={[
-          { k: "Client Type", v: project.clientType },
+          { k: "", v: project.clientType },
           { k: "Area", v: project.area },
           { k: "Year", v: project.year },
           { k: "Location", v: project.location },

@@ -166,19 +166,18 @@ export function ProjectCard({
       </div>
 
       <div className="flex flex-1 flex-col px-5 pt-5 pb-4 transition-colors duration-500">
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start sm:gap-4">
           <div className="min-w-0">
             <p className="label-caps text-primary">{card.cardLabel ?? card.category}</p>
             <h3 className="display-md mt-2 text-foreground transition-colors duration-500 group-hover:text-background group-focus-within:text-background">
               {card.name}
             </h3>
           </div>
-          {card.clientType && (
-            <p className="label-caps hidden max-w-32 text-right leading-relaxed text-muted-foreground transition-colors duration-500 group-hover:text-background/60 xl:block">
-              <span className="block text-[0.62rem] tracking-[0.18em] opacity-70">CLIENT TYPE</span>
-              <span className="mt-1 block">{card.clientType}</span>
+          {card.clientType ? (
+            <p className="label-caps max-w-full leading-snug tracking-[0.12em] text-muted-foreground transition-colors duration-500 group-hover:text-background/60 group-focus-within:text-background/60 sm:max-w-[11rem] sm:text-right sm:tracking-[0.2em] [word-break:break-word]">
+              {card.clientType}
             </p>
-          )}
+          ) : null}
         </div>
 
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground transition-colors duration-500 group-hover:text-background/75 group-focus-within:text-background/75">

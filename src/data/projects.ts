@@ -124,40 +124,33 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "forge-24",
-    name: "A3 FITNESS GYM 2",
-    location: "",
+    slug: "north-block-strength",
+    name: "FIT FIRST GYM",
+    location: "RAJKOT, INDIA",
     category: "Gym Projects",
     cardLabel: "GYM INTERIOR DESIGN PROJECTS",
     hideCardMeta: true,
-    area: "4,800 sq ft",
+    area: "3,900 sq ft",
     year: "2023",
-    clientType: "EXPANDED FITNESS GYM",
+    clientType: "FITNESS ARENA",
     insight:
-      "A larger second space that repurposed existing materials, transforming a garage-like shell into a more upmarket gym setting.",
-    card: p3,
-    hero: p3,
-    gallery: [
-      { src: p6, alt: "Placeholder: turf sled lane at Forge 24", caption: "The sled lane runs parallel to circulation, never across it." },
-      { src: caseImg, alt: "Placeholder: main floor at Forge 24" },
-    ],
+      "A massive fitness arena imagined from far-off Delhi, with meticulous planning and detailed drawings linking design to execution in Rajkot.",
+    card: p6,
+    hero: p6,
+    gallery: [{ src: gallery1, alt: "Placeholder: interior detail at North Block Strength" }],
     study: {
-      brief:
-        "A 24-hour unstaffed gym where members train alone at 2am and the layout has to do the supervising.",
-      user: "Shift workers and early risers, often training solo with no floor staff present.",
-      challenge:
-        "Safety and sightlines without staff. Every blind corner is a liability, and heavy lifting happens without a spotter.",
+      brief: "A neighbourhood gym rebuilding its front-of-house after four years of trading.",
+      user: "Members who train for 50 minutes and pass reception twice a day.",
+      challenge: "Reception blocked the entry, so members walked around it and never saw the retail shelf.",
       decisions:
-        "Sightlines from the entry were kept unbroken to every corner, the free-weight zone was placed within camera coverage, and rack safeties were specified as standard rather than optional. Lighting runs at full level through the night in the training zones and drops only in circulation.",
-      outcome:
-        "No blind zones on the floor, and the collision point between the sled lane and the main aisle was removed entirely in the plan stage.",
-      learning:
-        "Unstaffed hours change the brief completely. The layout has to replace the floor manager.",
+        "The desk was rotated off the entry axis, retail was placed on the exit path at eye level, and the changing-room door was moved so the two flows stopped crossing.",
+      outcome: "Retail pick-up roughly doubled and the entry queue at 7pm disappeared.",
+      learning: "Front-of-house is a revenue zone, not a lobby.",
     },
     testimonial: {
-      quote: "The night shift is our busiest quiet hour. The floor holds up without anyone watching it.",
+      quote: "Same shelf, same stock, different position. It sells now.",
       author: "Placeholder Client",
-      role: "Owner, Forge 24",
+      role: "Owner, North Block Strength",
     },
   },
   {
@@ -201,33 +194,40 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "north-block-strength",
-    name: "FIT FIRST GYM",
-    location: "RAJKOT, INDIA",
+    slug: "forge-24",
+    name: "A3 FITNESS GYM 2",
+    location: "",
     category: "Gym Projects",
     cardLabel: "GYM INTERIOR DESIGN PROJECTS",
     hideCardMeta: true,
-    area: "3,900 sq ft",
+    area: "4,800 sq ft",
     year: "2023",
-    clientType: "FITNESS ARENA",
+    clientType: "EXPANDED FITNESS GYM",
     insight:
-      "A massive fitness arena imagined from far-off Delhi, with meticulous planning and detailed drawings linking design to execution in Rajkot.",
-    card: p6,
-    hero: p6,
-    gallery: [{ src: gallery1, alt: "Placeholder: interior detail at North Block Strength" }],
+      "A bigger gym cut out of a former car garage, with existing mirrors, sectional ceilings and layered lighting to create a more premium fitness space.",
+    card: p3,
+    hero: p3,
+    gallery: [
+      { src: p6, alt: "Placeholder: turf sled lane at Forge 24", caption: "The sled lane runs parallel to circulation, never across it." },
+      { src: caseImg, alt: "Placeholder: main floor at Forge 24" },
+    ],
     study: {
-      brief: "A neighbourhood gym rebuilding its front-of-house after four years of trading.",
-      user: "Members who train for 50 minutes and pass reception twice a day.",
-      challenge: "Reception blocked the entry, so members walked around it and never saw the retail shelf.",
+      brief:
+        "A 24-hour unstaffed gym where members train alone at 2am and the layout has to do the supervising.",
+      user: "Shift workers and early risers, often training solo with no floor staff present.",
+      challenge:
+        "Safety and sightlines without staff. Every blind corner is a liability, and heavy lifting happens without a spotter.",
       decisions:
-        "The desk was rotated off the entry axis, retail was placed on the exit path at eye level, and the changing-room door was moved so the two flows stopped crossing.",
-      outcome: "Retail pick-up roughly doubled and the entry queue at 7pm disappeared.",
-      learning: "Front-of-house is a revenue zone, not a lobby.",
+        "Sightlines from the entry were kept unbroken to every corner, the free-weight zone was placed within camera coverage, and rack safeties were specified as standard rather than optional. Lighting runs at full level through the night in the training zones and drops only in circulation.",
+      outcome:
+        "No blind zones on the floor, and the collision point between the sled lane and the main aisle was removed entirely in the plan stage.",
+      learning:
+        "Unstaffed hours change the brief completely. The layout has to replace the floor manager.",
     },
     testimonial: {
-      quote: "Same shelf, same stock, different position. It sells now.",
+      quote: "The night shift is our busiest quiet hour. The floor holds up without anyone watching it.",
       author: "Placeholder Client",
-      role: "Owner, North Block Strength",
+      role: "Owner, Forge 24",
     },
   },
   {

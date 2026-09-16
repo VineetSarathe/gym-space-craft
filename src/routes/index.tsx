@@ -8,6 +8,8 @@ import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { EnquiryPopup } from "@/components/site/EnquiryPopup";
 import { WhyGymZones } from "@/components/site/WhyGymZones";
 import { ProjectShowcase } from "@/components/site/ProjectShowcase";
+import { toProjectCardData } from "@/components/site/ProjectCard";
+import { projects as workProjects } from "@/data/projects";
 import { Recognition } from "@/components/site/Recognition";
 import { Statement } from "@/components/site/Statement";
 import { SagrikaMethod } from "@/components/site/SagrikaMethod";
@@ -20,9 +22,6 @@ import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
 import p3 from "@/assets/project-3.jpg";
 import p4 from "@/assets/project-4.jpg";
-import p5 from "@/assets/project-5.jpg";
-import p6 from "@/assets/project-6.jpg";
-import floorplan from "@/assets/floorplan.jpg";
 import caseImg from "@/assets/case-study.jpg";
 import founderImg from "@/assets/founder.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
@@ -48,48 +47,12 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const projects = [
-  {
-    slug: "iron-standard",
-    images: [p1, caseImg, floorplan],
-    name: "THE STRENGTH CULTURE",
-    location: "Jammu (J&K), India",
-    category: "Gym Interior",
-    area: "6,200 sq ft",
-    year: "2024",
-    insight: "Zoned circulation cut equipment wait-time in half at peak hours.",
-  },
-  {
-    slug: "sanctum-wellness",
-    images: [p2, gallery1, materials],
-    name: "A3 FITNESS GYM & SPA",
-    location: "Jammu, India",
-    category: "Gym Interior",
-    area: "3,500 sq ft",
-    year: "2024",
-    insight: "A 3,500 sq ft fitness space planned around cardio, Zumba, dumbbells and strength training, using ceilings and flooring to define each zone.",
-  },
-  {
-    slug: "forge-24",
-    images: [p3, p5, gallery1],
-    name: "A3 FITNESS GYM 2",
-    location: "Jammu, India",
-    category: "Gym Interior",
-    area: "4,800 sq ft",
-    year: "2023",
-    insight: "A larger second space that repurposed existing materials, transforming a garage-like shell into a more upmarket gym setting.",
-  },
-  {
-    slug: "rep-house-cycle",
-    images: [p4, p6, materials],
-    name: "Rep House Cycle",
-    location: "Indore, MP",
-    category: "Wellness Studio",
-    area: "1,600 sq ft",
-    year: "2023",
-    insight: "Tiered deck added nine bikes without touching the footprint.",
-  },
-];
+const homeFeaturedProjects = [
+  ...workProjects.slice(0, 2),
+  workProjects.find((p) => p.slug === "still-house-recovery"),
+]
+  .filter((p): p is (typeof workProjects)[number] => p != null)
+  .map(toProjectCardData);
 
 const steps = [
   { k: "Understand", d: "Know your people, goals and opportunities." },
@@ -305,7 +268,7 @@ function Home() {
             </p>
           </Reveal>
 
-          <ProjectShowcase projects={projects.slice(0, 3)} />
+          <ProjectShowcase projects={homeFeaturedProjects} />
 
           <Reveal className="mt-12 flex flex-wrap items-center justify-end gap-6 border-t border-border pt-6">
             <Link

@@ -144,7 +144,7 @@ export function CinematicHero({
           <dl className="mt-12 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-background/15 pt-8 md:grid-cols-4 lg:max-w-4xl">
             {meta.map((m, i) => (
               <div
-                key={m.k}
+                key={`${i}-${m.v}`}
                 className="transition-all duration-700 ease-out"
                 style={{
                   transitionDelay: `${400 + i * 110}ms`,
@@ -152,8 +152,10 @@ export function CinematicHero({
                   transform: stage >= 2 ? "none" : "translateY(14px)",
                 }}
               >
-                <dt className="label-caps text-background/50">{m.k}</dt>
-                <dd className="mt-2 font-display text-lg uppercase">{m.v}</dd>
+                {m.k ? <dt className="label-caps text-background/50">{m.k}</dt> : null}
+                <dd className={m.k ? "mt-2 font-display text-lg uppercase" : "font-display text-lg uppercase"}>
+                  {m.v}
+                </dd>
               </div>
             ))}
           </dl>
@@ -365,7 +367,7 @@ export function EditorialSpread({
               <dl className="mt-12 grid grid-cols-2 gap-x-6 gap-y-7 border-t border-background/15 pt-8 md:max-w-xl">
                 {meta.map((m, i) => (
                   <div
-                    key={m.k}
+                    key={`${i}-${m.v}`}
                     className="transition-all duration-700 ease-out"
                     style={{
                       transitionDelay: `${360 + i * 110}ms`,
@@ -373,8 +375,10 @@ export function EditorialSpread({
                       transform: stage >= 2 ? "none" : "translateY(14px)",
                     }}
                   >
-                    <dt className="label-caps text-background/45">{m.k}</dt>
-                    <dd className="mt-2 font-display text-base uppercase">{m.v}</dd>
+                    {m.k ? <dt className="label-caps text-background/45">{m.k}</dt> : null}
+                    <dd className={m.k ? "mt-2 font-display text-base uppercase" : "font-display text-base uppercase"}>
+                      {m.v}
+                    </dd>
                   </div>
                 ))}
               </dl>
